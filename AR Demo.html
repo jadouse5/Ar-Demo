@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AR Demo</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      <a-marker type="pattern" url="/Users/tounsi/Downloads/AR/pattern-Logo ESAI Transparent.patt">
+        <a-entity gltf-model="url(/Users/tounsi/Downloads/AR/scene.gltf)" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 0 0" 
+                  animation__click="property: rotation; to: 0 360 0; dur: 2000; startEvents: click;"></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
